@@ -1,0 +1,6 @@
+{
+  "name": "Maris Slide - Quà Tặng Công Nghệ",
+  "description": "Kho tài nguyên quà tặng khóa học công nghệ giáo dục số từ Maris Slide",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
