@@ -24,7 +24,6 @@ import {
 import Header from './components/Header';
 import Footer from './components/Footer';
 import GiftCard from './components/GiftCard';
-import MemoryGame from './components/MemoryGame';
 import { giftItems, reviewsData } from './data';
 import { GiftItem, ReviewMessage } from './types';
 
@@ -735,26 +734,7 @@ export default function App() {
 
       </section>
 
-      {/* Playable Memory Match Game Dedicated Section */}
-      <section id="memory-game-section" className="bg-[#fff0f2]/60 py-16 border-y border-red-50/70">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="text-center max-w-2xl mx-auto mb-10">
-            <span className="px-3.5 py-1 rounded-full bg-brand-primary/10 text-brand-primary text-xs font-extrabold border border-brand-primary/20 inline-block uppercase">
-              Tài nguyên đặc biệt số 6
-            </span>
-            <h2 className="font-display font-black text-3xl text-brand-dark mt-2.5">
-              Trải Nghiệm Game Lật Mảnh Ghép
-            </h2>
-            <p className="text-gray-500 text-sm mt-2">
-              Chúng tôi đã tích hợp trực tiếp game HTML5 độc quyền này để các thầy cô trải nghiệm thử tính năng học vụ tương tác cao chuẩn Maris Slide.
-            </p>
-          </div>
 
-          <MemoryGame />
-
-        </div>
-      </section>
 
       {/* Prominent Course & Zalo inquiry block */}
       <section id="course-section" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -1180,11 +1160,29 @@ export default function App() {
               <Send className="w-4 h-4" />
             </button>
           </form>
-
         </div>
       )}
 
-
+      {/* Floating Zalo Chat Bubble */}
+      <div className="fixed bottom-6 left-6 z-30">
+        <a
+          id="zalo-float-bubble"
+          href="https://zalo.me/0396581283"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-14 h-14 bg-gradient-to-tr from-brand-primary to-orange-500 rounded-full flex items-center justify-center text-white shadow-xl hover:shadow-2xl hover:scale-110 active:scale-95 transform transition-all relative group animate-bounce"
+          title="Zalo Trợ Giảng"
+        >
+          <Phone className="w-6 h-6 animate-pulse" />
+          <span className="absolute -top-1 -right-1 flex h-4 w-4">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-4 w-4 bg-emerald-500"></span>
+          </span>
+          <div className="absolute left-16 bg-white border border-gray-100 py-1.5 px-3 rounded-xl shadow-md text-[10px] sm:text-xs font-bold text-brand-dark whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300">
+            Zalo Trợ Giảng: 0396.581.283
+          </div>
+        </a>
+      </div>
 
       {/* Footer */}
       <Footer />
