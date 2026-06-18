@@ -32,13 +32,13 @@ export default function Header({ onAiConsultationClick, onScrollToGifts }: Heade
           </div>
 
           {/* Desktop Navigation Menu */}
-          <nav className="hidden md:flex items-center gap-1.5 lg:gap-3 text-sm font-medium">
+          <nav className="hidden md:flex items-center gap-3 lg:gap-6 text-sm font-medium">
             <button
               id="nav-home"
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-              className="px-3.5 py-2 rounded-xl bg-brand-lightrose text-brand-primary font-bold transition-all text-xs lg:text-sm"
+              className="px-3.5 py-2 rounded-xl bg-brand-lightrose text-brand-primary font-bold transition-all text-xs lg:text-sm cursor-pointer"
             >
               Trang Chủ
             </button>
@@ -46,7 +46,7 @@ export default function Header({ onAiConsultationClick, onScrollToGifts }: Heade
             <button
               id="nav-gifts"
               onClick={onScrollToGifts}
-              className="px-3 py-2 text-gray-600 hover:text-brand-primary hover:bg-neutral-50 rounded-xl transition-all text-xs lg:text-sm"
+              className="px-3 py-2 text-gray-600 hover:text-brand-primary hover:bg-neutral-50 rounded-xl transition-all text-xs lg:text-sm cursor-pointer"
             >
               Quà Tặng Công Nghệ
             </button>
@@ -78,26 +78,12 @@ export default function Header({ onAiConsultationClick, onScrollToGifts }: Heade
             <button
               id="nav-ai-consult"
               onClick={onAiConsultationClick}
-              className="px-3 py-2 text-gray-600 hover:text-brand-primary hover:bg-neutral-50 rounded-xl inline-flex items-center gap-1 transition-all text-xs lg:text-sm"
+              className="px-3 py-2 text-gray-600 hover:text-brand-primary hover:bg-neutral-50 rounded-xl inline-flex items-center gap-1 transition-all text-xs lg:text-sm cursor-pointer"
             >
               <HelpCircle className="w-4 h-4 text-amber-500" />
               Trợ lý AI Tư Vấn
             </button>
           </nav>
-
-          {/* Call-to-action button */}
-          <div className="hidden md:flex items-center gap-3">
-            <a
-              id="header-zalo-btn"
-              href="https://zalo.me/0396581283"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="h-11 px-5 rounded-full bg-gradient-to-r from-brand-primary to-rose-600 hover:from-rose-600 hover:to-brand-primary text-white font-semibold text-xs lg:text-sm shadow-md hover:shadow-lg transform active:scale-95 transition-all flex items-center gap-2"
-            >
-              <Phone className="w-4 h-4 animate-bounce" />
-              Zalo Trợ Giảng: 0396.581.283
-            </a>
-          </div>
 
           {/* Mobile hamburger menu toggle */}
           <div className="flex md:hidden">
