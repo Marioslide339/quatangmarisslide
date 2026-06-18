@@ -56,17 +56,6 @@ export const giftItems: GiftItem[] = [
     badge: "Đặc Biệt"
   },
   {
-    id: "6",
-    title: "Mini-App Game: Lật Mảnh Ghép Trí Tuệ",
-    description: "Một game cực kỳ lôi cuốn được tích hợp trực tiếp ngay trên trang web này dành tặng riêng cho thầy cô làm mẫu và cho học sinh chơi thử thách trí nhớ.",
-    category: "Ứng Dụng Tương Tác",
-    isInteractive: true,
-    tags: ["Tích hợp sẵn", "Trò chơi trí nhớ", "HTML5 & React", "Thử thách trực tiếp"],
-    bannerGradient: "from-[#00c6ff] to-[#0072ff]",
-    iconName: "Gamepad2",
-    badge: "Chơi Ngay"
-  },
-  {
     id: "7",
     title: "Phần Mềm: iSpring Suite 11 + Animiz",
     description: "Bộ cài đặt trọn vẹn phần mềm soạn bài giảng chuẩn E-learning quốc tế iSpring Suite 11 (tích hợp thẳng với PowerPoint) cùng phần mềm sản xuất video hoạt hình giáo dục Animiz ấn tượng.",
